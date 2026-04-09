@@ -1,0 +1,13 @@
+function R=Ry(ang)
+    dato=whos('ang');
+    if strcmp(dato.class,'sym')
+        R = simplify([cos(ang), 0, sin(ang); ...
+                      0, 1, 0; ...
+                      -sin(ang), 0, cos(ang)]);
+    else
+        theta=deg2rad(ang);
+        R = [cos(theta), 0, sin(theta); ...
+             0, 1, 0; ...
+             -sin(theta), 0, cos(theta)];
+    end
+end

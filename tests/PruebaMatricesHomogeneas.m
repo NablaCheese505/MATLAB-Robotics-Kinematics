@@ -1,0 +1,13 @@
+% Ejemplo matrices homogeneas
+disp('Hrx')
+Hrx(45)
+disp('Hry')
+Hry(45)
+disp('Hrz')
+Hrz(45)
+disp('Htx')
+Htx(20)
+disp('Hty')
+Hty(20)
+disp('Htz')
+Htz(20)
